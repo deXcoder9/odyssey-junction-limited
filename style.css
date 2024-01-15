@@ -1,7 +1,222 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap");
 
-*{
-    font-family: 'Mulish', sans-serif;
+* {
+    font-family: "Mulish", sans-serif;
     padding: 0;
     margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/*! VARIABLES STORED HERE  */
+
+:root {
+    --primary-color: #ff5400;
+    --secondary-color: #131318;
+    --third-color: rgba(19, 19, 24, 0.7);
+}
+
+.btn {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding: 12px 30px;
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.medium_header {
+    color: var(--secondary-color);
+    font-size: 3.2rem;
+    font-weight: 800;
+}
+
+.paragraph_description {
+    color: var(--third-color);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.vessel {
+    max-width: 1170px;
+    margin: 30px auto;
+}
+
+.header_btn {
+    width: 100px;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary-color);
+    font-size: 1.5rem;
+    padding: 0px 23px;
+    border-radius: 9px;
+}
+
+/*! Header> NAV  */
+header>nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header>nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li:nth-child(1),
+li:nth-child(2),
+li:nth-child(3),
+li:nth-child(4) {
+    margin-right: 40px;
+}
+
+nav ul li:nth-child(1) {
+    color: var(--primary-color);
+}
+
+header>nav ul li {
+    color: #424247;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+header>nav ul p{
+    display:none ;
+}
+header nav h2 {
+    color: #131318;
+    font-size: 3rem;
+    display: flex;
+}
+
+header nav h2 img {
+    width: 4rem;
+    margin-right: 10px;
+}
+
+/*! HEADER */
+.header_container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    color: #fff;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(assets/Group\ 13\ \(1\)\ \(1\).png);
+}
+
+.header_content {
+    max-width: 670px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header_content h1 {
+    font-size: 6rem;
+    font-weight: 800;
+}
+
+.header_content p {
+    padding: 19px 0px;
+}
+
+.button_content {
+    display: flex;
+    gap: 12px;
+    border-radius: 8px;
+background: rgba(255, 255, 255, 0.35);
+padding: 16px ;
+}
+
+.button_content button {
+    width: 150px;
+    height: 45px;
+    border-radius: 8px;
+    background: #FFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+}
+
+.button_content button p {
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+/*? Mobile Divice  */
+
+@media screen and (max-width: 600px ) {
+    html{
+        font-size: 43%;
+    }
+header>nav ul li {
+    display: none;
+}
+header>nav ul p{
+    display: block;
+    font-size: 15px;
+}
+header > nav{
+    padding: 0px 20px;
+}
+.button_content {
+flex-direction: column;
+}
+.header_container {
+width: 90%;
+margin: auto;
+background-position: center;
+margin-top: 40px;
+}
+.header_content h1 {
+    font-size: 22px;
+}
+ .header_content p {
+    width: 280px;
+    margin: auto;
+ }  
+.button_content button {
+    width: 170px;  
+    height: 40px;
+}
+
+
+
+}
+/*? Laptop or Pc Divice  */
+
+@media screen and (min-width: 990px) and (max-width:1220px) {
+    html{
+        font-size: 47%;
+    }
+    header > nav{
+        padding: 0px 5%;
+    }
+    .header_container {
+        width: 90%;
+        margin: auto;
+        background-position: center;
+        margin-top: 40px;
+        }
+        
 }
