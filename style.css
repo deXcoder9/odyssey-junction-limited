@@ -86,9 +86,11 @@ header>nav ul li {
     font-size: 1.4rem;
     cursor: pointer;
 }
-header>nav ul p{
-    display:none ;
+
+header>nav ul p {
+    display: none;
 }
+
 header nav h2 {
     color: #131318;
     font-size: 3rem;
@@ -135,8 +137,8 @@ header nav h2 img {
     display: flex;
     gap: 12px;
     border-radius: 8px;
-background: rgba(255, 255, 255, 0.35);
-padding: 16px ;
+    background: rgba(255, 255, 255, 0.35);
+    padding: 16px;
 }
 
 .button_content button {
@@ -156,6 +158,31 @@ padding: 16px ;
     font-weight: 400;
 }
 
+/*! OUR POPULAR TOURS  */
+.popular_tours {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    /* gap: 20px; */
+
+}
+
+.popular_tours div:first-child {
+    max-width: 500px;
+}
+
+.popular_tours div:first-child * {
+    padding-bottom: 10px;
+}
+
+.popular_tours div:first-child ul {
+    margin-left: 40px;
+}
+
+.popular_tours div:first-child button {
+    margin-top: 20px;
+}
 
 
 
@@ -165,58 +192,105 @@ padding: 16px ;
 
 /*? Mobile Divice  */
 
-@media screen and (max-width: 600px ) {
-    html{
+@media screen and (max-width: 600px) {
+    html {
         font-size: 43%;
     }
-header>nav ul li {
-    display: none;
-}
-header>nav ul p{
-    display: block;
-    font-size: 15px;
-}
-header > nav{
-    padding: 0px 20px;
-}
-.button_content {
-flex-direction: column;
-}
-.header_container {
-width: 90%;
-margin: auto;
-background-position: center;
-margin-top: 40px;
-}
-.header_content h1 {
-    font-size: 22px;
-}
- .header_content p {
-    width: 280px;
-    margin: auto;
- }  
-.button_content button {
-    width: 170px;  
-    height: 40px;
-}
 
-
-
-}
-/*? Laptop or Pc Divice  */
-
-@media screen and (min-width: 990px) and (max-width:1220px) {
-    html{
-        font-size: 47%;
+    header>nav ul li {
+        display: none;
     }
-    header > nav{
-        padding: 0px 5%;
+
+    header>nav ul p {
+        display: block;
+        font-size: 15px;
     }
+
+    header>nav {
+        padding: 0px 20px;
+    }
+
+    .button_content {
+        flex-direction: column;
+    }
+
     .header_container {
         width: 90%;
         margin: auto;
         background-position: center;
         margin-top: 40px;
-        }
-        
+    }
+
+    .header_content h1 {
+        font-size: 22px;
+    }
+
+    .header_content p {
+        width: 280px;
+        margin: auto;
+    }
+
+    .button_content button {
+        width: 170px;
+        height: 40px;
+    }
+
+    .popular_tours {
+        flex-direction: column;
+    }
+
+    .popular_tours div:first-child {
+        max-width: 335;
+        padding: 0px 20px 30px;
+    }
+
+    .popular_tours div:last-child {
+        width: 90%;
+    }
+
+    .popular_tours div img {
+        width: 100%;
+    }
+
+    .popular_tours div:first-child ul {
+        margin-left: 25px;
+    }
+
+
+}
+
+/*? Laptop or Pc Divice  */
+
+@media screen and (min-width: 990px) and (max-width:1220px) {
+    html {
+        font-size: 47%;
+    }
+
+    header>nav {
+        padding: 0px 5%;
+    }
+
+    .header_container {
+        width: 90%;
+        margin: auto;
+        background-position: center;
+        margin-top: 40px;
+    }
+
+    .popular_tours div:first-child {
+        max-width: 400px;
+    }
+
+    .popular_tours div:last-child {
+        width: 40%;
+    }
+
+    .popular_tours div img {
+        width: 100%;
+    }
+
+    .popular_tours {
+        justify-content: center;
+        gap: 40px;
+    }
 }
