@@ -82,6 +82,10 @@ li:nth-child(3),
 li:nth-child(4) {
     margin-right: 40px;
 }
+nav ul li:nth-child(5){
+    margin-right: 40px;
+   
+}
 
 nav ul li:nth-child(1) {
     color: var(--primary-color);
@@ -709,7 +713,8 @@ hr {
     }
 
     .deals_and_discouts>p {
-        max-width: 100%;
+        max-width: 84%;
+        margin: auto;
     }
 
     .busk_inthe_sun {
@@ -799,6 +804,13 @@ hr {
 
     }
 
+    .perfect_content >p {
+        padding-left: 19px ;
+    }
+    .perfect_content >h4 {
+        padding-left: 19px ;
+        padding-top: 13px;
+    }
     .perfect_content input {
         width: 80%;
     }
