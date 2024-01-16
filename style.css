@@ -456,13 +456,14 @@ header nav h2 img {
 }
 
 .a_perfect_place {
-    margin: 80px auto;
+    margin: 90px auto;
 }
 
 /*! GET LOST  */
 .get_lost {
     display: flex;
     justify-content: space-between;
+    padding-top: 20px;
 }
 
 .leftside_get_lost {
