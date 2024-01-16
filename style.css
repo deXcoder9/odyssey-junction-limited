@@ -530,28 +530,88 @@ footer>h2 img {
     width: 4rem;
     margin-right: 10px;
 }
-footer>p{
-    max-width: 750px;
-color: #5A5A5D;
 
-text-align: center;
-font-size: 1.5rem;
-font-weight: 400;
-line-height: 26px;
-padding: 10px 0px;
+footer>p {
+    max-width: 750px;
+    color: #5A5A5D;
+
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 10px 0px;
 }
+
 hr {
     width: 750px;
     border: 1px solid rgba(19, 19, 24, 0.10);
     margin: 40px 0px;
 }
-.icons{
+
+.icons {
     display: flex;
     gap: 30px;
     font-size: 18px;
 }
 
+/*! CLIENT  */
 
+.client {
+    margin: 70px auto;
+}
+
+.client__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.client__card {
+    box-shadow:
+        0 1px 1px hsl(0deg 0% 0% / 0.075),
+        0 2px 2px hsl(0deg 0% 0% / 0.075),
+        0 4px 4px hsl(0deg 0% 0% / 0.075),
+        0 8px 8px hsl(0deg 0% 0% / 0.075),
+        0 16px 16px hsl(0deg 0% 0% / 0.075);
+    border-radius: 10px;
+}
+
+.client__card img {
+    max-width: 70px;
+    border-radius: 100%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1.5rem;
+}
+
+.client__card h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.client__card p {
+    color: var(--text-light);
+}
+
+.client__card span {
+    font-size: 3rem;
+    color: var(--text-light);
+}
+
+.section__header {
+    max-width: 400px;
+}
+
+.section__subheader {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.client_store {
+    padding: 20px;
+}
 
 
 /*? Mobile Divice  */
@@ -782,9 +842,29 @@ hr {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
     hr {
         width: 320px;
         margin: 20px 0px;
+    }
+
+    .client__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .client__card {
+        width: 70%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .section__subheader {
+        text-align: center;
+    }
+
+    .section__header {
+        text-align: center;
+        margin: auto;
     }
 
 }
@@ -862,6 +942,16 @@ hr {
 
     .perfect_content input {
         width: 93%;
+    }
+
+    .client {
+        width: 90%;
+        margin: auto;
+    }
+
+    .get_lost {
+        width: 90%;
+        margin: auto;
     }
 }
 
