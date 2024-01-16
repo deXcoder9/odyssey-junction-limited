@@ -591,13 +591,20 @@ hr {
 
 .client__card h4 {
     margin-bottom: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 2.2rem;
     font-weight: 600;
-    color: var(--text-dark);
+    color: var(--secondary-color);
+    max-width: 210px;
+    line-height: 30px;
+}
+.client_medium_header{
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .client__card p {
-    color: var(--text-light);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .client__card span {
@@ -616,6 +623,9 @@ hr {
 
 .client_store {
     padding: 20px;
+}
+.client_medium_header{
+    font-size: 2.3rem;
 }
 
 
@@ -879,6 +889,10 @@ hr {
         text-align: center;
         margin: auto;
     }
+.client__card h4 {
+    max-width: 210px;
+    line-height: 30px;
+}
 
 }
 
