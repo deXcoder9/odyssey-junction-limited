@@ -167,6 +167,9 @@ header nav h2 img {
     font-size: 1.5rem;
     font-weight: 400;
 }
+.gayeb{
+    visibility:hidden ;
+}
 
 /*! OUR POPULAR TOURS  */
 .popular_tours {
@@ -671,6 +674,10 @@ hr {
 
     .button_content button {
         width: 170px;
+        height: 40px;
+    }
+    .header_btn{
+        width: 120px;
         height: 40px;
     }
 
